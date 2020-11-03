@@ -7,8 +7,20 @@
 </head>
 <body>
     <script>
-        
+        let sonhapvao = parseInt(prompt("nhập vào một số bất kỳ:"))
+        if (sonhapvao <2){
+            alert( sonhapvao + " không phải là số nguyên tố")
+        }
+        for (i=2;i<(sonhapvao-1);i++){
+            if(sonhapvao%i==0){
+                alert( sonhapvao + " không phải là số nguyên tố")
+                break
+            } else{
+                alert ( sonhapvao + " là số nguyên tố")
+                break
+            }
+        }
+       
     </script>
-
 </body>
 </html>
