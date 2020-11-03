@@ -6,21 +6,22 @@
     <title>Tính Số Nguyên Tố</title>
 </head>
 <body>
+
     <script>
         let sonhapvao = parseInt(prompt("nhập vào một số bất kỳ:"))
         if (sonhapvao <2){
             alert( sonhapvao + " không phải là số nguyên tố")
         }
-        for (i=2;i<(sonhapvao-1);i++){
+        for (i=2;i<sonhapvao-1;i++){
             if(sonhapvao%i==0){
-                alert( sonhapvao + " không phải là số nguyên tố")
-                break
+                alert( sonhapvao + " không phải là số nguyên tố")              
             } else{
                 alert ( sonhapvao + " là số nguyên tố")
-                break
             }
-        }
-       
+               break                
+            }
+        
+    
     </script>
 </body>
 </html>
